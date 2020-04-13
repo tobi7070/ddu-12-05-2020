@@ -7,13 +7,19 @@
 </head>
 <body>
     <header>
-        
+        <nav>
+            <ul>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         @RenderBody()
     </main>
     <footer>
-
+        <p>&copy; 2020 - SchoolNetwork - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
     </footer>
 </body>
 </html>
